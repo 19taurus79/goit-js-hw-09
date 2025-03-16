@@ -89,7 +89,10 @@ const markup = images
 
 gallery.insertAdjacentHTML('beforeend', markup);
 console.log(markup);
-const lightbox = new SimpleLightbox('.gallery a', {});
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 // gallery.addEventListener('click', onGalleryClick);
 
 // function onGalleryClick(event) {
